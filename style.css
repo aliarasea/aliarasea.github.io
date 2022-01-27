@@ -2,6 +2,11 @@ body {
   margin: 0 auto;
   padding: 0;
   background: #222;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 .left {
@@ -52,7 +57,7 @@ body {
   padding-top: 1%;
   padding-bottom: 1%;
   left: 50%;
-  top: 4%;
+  top: 41%;
   margin-left: -250px;
   background: #E9E2D0;
   box-shadow: -20px 0 35px -25px black, 20px 0 35px -25px black;

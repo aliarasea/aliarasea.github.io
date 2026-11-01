@@ -1,25 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ali Aras — kişisel iletişim ve profil sayfası.">
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script type="application/javascript" src="main.js"></script>
-    <title>Ali Aras</title>
+    <script type="application/javascript" src="main.js" defer></script>
+    <title>Ali Aras — Kişisel Profil</title>
 </head>
 
 <body>
-    <div id="gradient"></div>
-    <div id="card">
-        <img src="https://avatars.githubusercontent.com/u/8797590?v=4" />
-        <h2 id="name">Ali Aras</h2>
-        <p><span>Mail: </span><a href="mailto:aliaras@outlook.com">outlook</a></p>
-        <p><span>LinkedIn: </span><a href="https://www.linkedin.com/in/aliaras/">/aliaras</a></p>
-        <p><span>Twitter: </span><a href="https://www.twitter.com/aliarasea">@aliarasea</a></p>
-        <p><span>Github: </span><a href="https://www.github.com/aliarasea">@aliarasea</a></p>
-        <span class="left bottom">Tel: +90 5352899782</span>
-        <span class="right bottom">Adress: Istanbul</span>
-    </div>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <main class="profile-shell">
+        <section class="profile-card" aria-labelledby="name">
+            <div class="profile-intro">
+                <div class="avatar-wrap">
+                    <img class="avatar" src="https://avatars.githubusercontent.com/u/8797590?v=4"
+                        alt="Ali Aras profil fotoğrafı" />
+                    <span class="online-dot" title="Aktif" aria-label="Aktif"></span>
+                </div>
+                <div class="intro-copy">
+                    <p class="eyebrow">KİŞİSEL PROFİL</p>
+                    <h1 id="name">Ali Aras</h1>
+                    <p class="role">Üretmeyi, öğrenmeyi ve iyi fikirleri paylaşmayı seven biri.</p>
+                    <div class="location"><span aria-hidden="true">⌖</span> İstanbul, Türkiye</div>
+                </div>
+            </div>
+
+            <div class="content-grid">
+                <div class="about-column">
+                    <p class="section-label">Merhaba, ben Ali</p>
+                    <p class="about-text">Dijital dünyada yeni şeyler keşfetmeye, anlamlı bağlantılar kurmaya ve
+                        fikirleri gerçeğe dönüştürmeye odaklanıyorum.</p>
+
+                    <div class="quick-facts" aria-label="Kısa bilgiler">
+                        <div class="fact">
+                            <span class="fact-icon" aria-hidden="true">✦</span>
+                            <span><strong>Meraklı</strong><small>Yeni fikirlere açık</small></span>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon" aria-hidden="true">↗</span>
+                            <span><strong>Bağlantıda</strong><small>İletişime açık</small></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-column">
+                    <p class="section-label">Bana ulaşın</p>
+                    <a class="contact-link" href="mailto:aliaras@outlook.com">
+                        <span class="contact-icon" aria-hidden="true">✉</span>
+                        <span><small>E-posta</small><strong>aliaras@outlook.com</strong></span>
+                        <span class="arrow" aria-hidden="true">↗</span>
+                    </a>
+                    <a class="contact-link" href="tel:+905352899782">
+                        <span class="contact-icon" aria-hidden="true">☎</span>
+                        <span><small>Telefon</small><strong>+90 535 289 97 82</strong></span>
+                        <span class="arrow" aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="social-section">
+                <div>
+                    <p class="section-label">Sosyal bağlantılar</p>
+                    <p class="social-hint">Güncel çalışmalarımı ve paylaşımlarımı takip edin.</p>
+                </div>
+                <nav class="social-links" aria-label="Sosyal medya bağlantıları">
+                    <a href="https://www.linkedin.com/in/aliaras/" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn profilini aç">in</a>
+                    <a href="https://www.twitter.com/aliarasea" target="_blank" rel="noopener noreferrer"
+                        aria-label="Twitter profilini aç">𝕏</a>
+                    <a href="https://www.github.com/aliarasea" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub profilini aç">◖</a>
+                </nav>
+            </div>
+
+            <footer class="card-footer">
+                <span>Bağlantı kurmaktan mutluluk duyarım.</span>
+                <button class="copy-button" type="button" data-email="aliaras@outlook.com">E-postayı kopyala
+                    <span aria-hidden="true">⧉</span></button>
+            </footer>
+        </section>
+    </main>
 </body>
 
 </html>

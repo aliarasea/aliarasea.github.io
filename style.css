@@ -160,37 +160,9 @@ h1 {
   line-height: 1.65;
 }
 
-.quick-facts {
-  display: flex;
-  gap: 26px;
-  margin-top: 28px;
-}
-
-.fact {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.fact-icon {
-  display: grid;
-  width: 32px;
-  height: 32px;
-  border: 1px solid rgba(255, 184, 107, 0.3);
-  border-radius: 10px;
-  color: var(--accent);
-  place-items: center;
-}
-
-.fact strong,
-.fact small,
 .contact-link strong,
 .contact-link small {
   display: block;
-}
-
-.fact strong {
-  font-size: 12px;
 }
 
 .fact small,
@@ -260,17 +232,9 @@ h1 {
   background: rgba(0, 0, 0, 0.12);
 }
 
-.projects-section,
 .interests-section {
   padding: 32px 52px;
   border-top: 1px solid var(--card-border);
-}
-
-.section-heading {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 20px;
 }
 
 h2 {
@@ -280,93 +244,11 @@ h2 {
   letter-spacing: -0.03em;
 }
 
-.all-projects {
-  color: var(--accent-light);
-  font-size: 12px;
-  font-weight: 600;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.all-projects:hover,
-.all-projects:focus-visible {
-  color: #fff;
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-top: 22px;
-}
-
-.project-card {
-  position: relative;
-  min-height: 148px;
-  padding: 17px;
-  border: 1px solid var(--card-border);
-  border-radius: 15px;
-  color: var(--text);
-  text-decoration: none;
-  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
-}
-
-.project-card:hover,
-.project-card:focus-visible {
-  border-color: rgba(255, 184, 107, 0.35);
-  background: rgba(255, 255, 255, 0.05);
-  transform: translateY(-3px);
-}
-
-.project-meta {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  color: var(--muted);
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-}
-
-.language-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-}
-
-.rust {
-  background: #dea584;
-}
-
-.typescript {
-  background: #3178c6;
-}
-
-.go {
-  background: #00add8;
-}
-
-.project-card strong {
-  display: block;
-  margin-top: 17px;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 15px;
-}
-
-.project-card small {
-  display: block;
-  max-width: 180px;
-  margin-top: 8px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.45;
-}
-
-.project-arrow {
-  position: absolute;
-  right: 15px;
-  bottom: 14px;
+h2 span {
+  display: inline-block;
   color: var(--accent);
+  font-size: 17px;
+  animation: sparkle 2.4s ease-in-out infinite;
 }
 
 .interests-section {
@@ -374,8 +256,8 @@ h2 {
   align-items: center;
   justify-content: space-between;
   gap: 35px;
-  padding-top: 28px;
-  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 34px;
   background: rgba(0, 0, 0, 0.1);
 }
 
@@ -390,14 +272,30 @@ h2 {
   justify-content: flex-end;
   gap: 8px;
   min-width: 230px;
+  max-width: 300px;
 }
 
 .interest-tags span {
-  padding: 8px 11px;
+  padding: 9px 12px;
   border: 1px solid rgba(170, 124, 255, 0.23);
   border-radius: 999px;
-  color: #d7cdf2;
-  font-size: 10px;
+  background: rgba(170, 124, 255, 0.07);
+  color: #e4dbf8;
+  font-size: 11px;
+  transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.interest-tags span:hover {
+  border-color: rgba(255, 184, 107, 0.55);
+  background: rgba(255, 184, 107, 0.13);
+  box-shadow: 0 8px 24px rgba(255, 184, 107, 0.12);
+  transform: translateY(-3px) rotate(-1deg);
+}
+
+.interest-tags b {
+  margin-right: 4px;
+  font-size: 14px;
 }
 
 .social-hint {
@@ -524,24 +422,6 @@ a:focus-visible {
     gap: 18px;
   }
 
-  .projects-section {
-    padding: 30px 26px;
-  }
-
-  .section-heading {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .project-card {
-    min-height: 125px;
-  }
-
   .interests-section {
     gap: 22px;
   }
@@ -549,6 +429,7 @@ a:focus-visible {
   .interest-tags {
     justify-content: flex-start;
     min-width: 0;
+    max-width: none;
   }
 }
 
@@ -558,5 +439,17 @@ a:focus-visible {
   *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes sparkle {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(0.9) rotate(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15) rotate(12deg);
   }
 }

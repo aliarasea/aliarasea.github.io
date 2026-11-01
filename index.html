@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ali Aras — kişisel iletişim ve profil sayfası.">
+    <meta name="description"
+        content="Ali Aras — yazılım, açık kaynak ve ürün geliştirme odaklı kişisel profil.">
     <link href="style.css" rel="stylesheet" type="text/css">
     <script type="application/javascript" src="main.js" defer></script>
     <title>Ali Aras — Kişisel Profil</title>
@@ -23,33 +24,34 @@
                     <span class="online-dot" title="Aktif" aria-label="Aktif"></span>
                 </div>
                 <div class="intro-copy">
-                    <p class="eyebrow">KİŞİSEL PROFİL</p>
+                    <p class="eyebrow">YAZILIM & AÇIK KAYNAK</p>
                     <h1 id="name">Ali Aras</h1>
-                    <p class="role">Üretmeyi, öğrenmeyi ve iyi fikirleri paylaşmayı seven biri.</p>
-                    <div class="location"><span aria-hidden="true">⌖</span> İstanbul, Türkiye</div>
+                    <p class="role">Yazılım geliştiren, yeni teknolojileri takip eden ve fikirleri çalışan ürünlere
+                        dönüştüren bir geliştirici.</p>
+                    <div class="location"><span aria-hidden="true">⌖</span> İstanbul · GitHub’da @aliarasea</div>
                 </div>
             </div>
 
             <div class="content-grid">
                 <div class="about-column">
-                    <p class="section-label">Merhaba, ben Ali</p>
-                    <p class="about-text">Dijital dünyada yeni şeyler keşfetmeye, anlamlı bağlantılar kurmaya ve
-                        fikirleri gerçeğe dönüştürmeye odaklanıyorum.</p>
+                    <p class="section-label">Ne yapıyorum?</p>
+                    <p class="about-text">Farklı teknoloji ekosistemlerinde pratik çözümler geliştiriyor; sade
+                        arayüzler, güvenilir servisler ve öğrenmeyi kolaylaştıran araçlar üzerine çalışıyorum.</p>
 
-                    <div class="quick-facts" aria-label="Kısa bilgiler">
+                    <div class="quick-facts" aria-label="GitHub istatistikleri">
                         <div class="fact">
-                            <span class="fact-icon" aria-hidden="true">✦</span>
-                            <span><strong>Meraklı</strong><small>Yeni fikirlere açık</small></span>
+                            <span class="fact-icon" aria-hidden="true">◈</span>
+                            <span><strong>25 repo</strong><small>Herkese açık çalışma</small></span>
                         </div>
                         <div class="fact">
-                            <span class="fact-icon" aria-hidden="true">↗</span>
-                            <span><strong>Bağlantıda</strong><small>İletişime açık</small></span>
+                            <span class="fact-icon" aria-hidden="true">◎</span>
+                            <span><strong>95 takip</strong><small>Aktif teknoloji ağı</small></span>
                         </div>
                     </div>
                 </div>
 
                 <div class="contact-column">
-                    <p class="section-label">Bana ulaşın</p>
+                    <p class="section-label">İletişim</p>
                     <a class="contact-link" href="mailto:aliaras@outlook.com">
                         <span class="contact-icon" aria-hidden="true">✉</span>
                         <span><small>E-posta</small><strong>aliaras@outlook.com</strong></span>
@@ -63,10 +65,61 @@
                 </div>
             </div>
 
+            <section class="projects-section" aria-labelledby="projects-title">
+                <div class="section-heading">
+                    <div>
+                        <p class="section-label">Seçili çalışmalar</p>
+                        <h2 id="projects-title">GitHub’dan öne çıkanlar</h2>
+                    </div>
+                    <a class="all-projects" href="https://github.com/aliarasea?tab=repositories" target="_blank"
+                        rel="noopener noreferrer">Tüm repolar <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="project-grid">
+                    <a class="project-card" href="https://github.com/aliarasea/okuldayim" target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="project-meta"><span class="language-dot rust"></span> RUST</span>
+                        <strong>okuldayim</strong>
+                        <small>Güncel ve pratik bir ürün fikri üzerinde çalışma.</small>
+                        <span class="project-arrow" aria-hidden="true">↗</span>
+                    </a>
+                    <a class="project-card" href="https://github.com/aliarasea/animations-app" target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="project-meta"><span class="language-dot typescript"></span> TYPESCRIPT</span>
+                        <strong>animations-app</strong>
+                        <small>Etkileşim ve hareket odaklı bir uygulama denemesi.</small>
+                        <span class="project-arrow" aria-hidden="true">↗</span>
+                    </a>
+                    <a class="project-card" href="https://github.com/aliarasea/nba-match-simulator" target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="project-meta"><span class="language-dot go"></span> GO</span>
+                        <strong>nba-match-simulator</strong>
+                        <small>Go ile geliştirilen bir maç simülasyonu.</small>
+                        <span class="project-arrow" aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="interests-section" aria-labelledby="interests-title">
+                <div>
+                    <p class="section-label">İlgi alanları</p>
+                    <h2 id="interests-title">Takip ettiğim ekosistemler</h2>
+                    <p class="social-hint">Açık kaynak topluluklarını, geliştirici araçlarını ve yeni nesil ürün
+                        yaklaşımlarını yakından izliyorum.</p>
+                </div>
+                <div class="interest-tags" aria-label="Teknoloji ilgi alanları">
+                    <span>Rust</span>
+                    <span>TypeScript</span>
+                    <span>Go</span>
+                    <span>Java</span>
+                    <span>Open source</span>
+                    <span>Developer tools</span>
+                </div>
+            </section>
+
             <div class="social-section">
                 <div>
-                    <p class="section-label">Sosyal bağlantılar</p>
-                    <p class="social-hint">Güncel çalışmalarımı ve paylaşımlarımı takip edin.</p>
+                    <p class="section-label">Bağlantılar</p>
+                    <p class="social-hint">Çalışmalarımı inceleyin veya iletişime geçin.</p>
                 </div>
                 <nav class="social-links" aria-label="Sosyal medya bağlantıları">
                     <a href="https://www.linkedin.com/in/aliaras/" target="_blank" rel="noopener noreferrer"
